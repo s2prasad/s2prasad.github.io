@@ -1,0 +1,129 @@
+header {
+	position: relative;
+    left: 0;
+    top: 0;
+    padding-left: 30px;
+    padding-top: 48px;
+    padding-bottom: 25px;
+}
+nav a{
+	text-decoration: none;
+}
+.listNav p{
+	margin-top: 0;
+}
+#results {
+	display: none;
+	float: left;
+	margin-bottom: 10px;
+}
+#loading {
+    position: absolute; 
+    width: 100%; 
+    height: 100%;
+    background: url('724.gif') no-repeat center center;
+    display: none;
+}
+#pagination {
+	display: none;
+	float: right;
+}
+.resultDiv {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#searchText {
+	height: 30px;
+	font-size: 20px;
+}
+::-webkit-input-placeholder {
+   color: black;
+   font-style: italic;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: black;  
+   font-style: italic;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: black;  
+   font-style: italic;
+}
+
+:-ms-input-placeholder {  
+   color: black;  
+   font-style: italic;
+}
+.searchResult section {
+	clear: left;
+	padding-bottom: 20px;
+	padding-left: 5px;
+	padding-right: 20px;
+	overflow: auto;
+}
+.searchResult section img{
+	height: auto;
+	max-width: 100%;
+	box-shadow: -10px 10px 10px 1px #aaaaaa;
+}
+.searchResult .descriptionDiv {
+	float: left;
+	margin-left: 20px;
+	height: 100%;
+	width: 75%;
+}
+.searchResult .imageDiv{
+	width: 100%;
+	float: left;
+	clear: left;
+	height: 100%;
+}
+#submitText{
+	border:1px solid #d7dada; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 5px 20px 5px 20px; text-decoration:none;
+	background-color: #f4f5f5; background-image: -webkit-gradient(linear, left top, left bottom, from(#f4f5f5), to(#dfdddd));
+	background-image: -webkit-linear-gradient(top, #f4f5f5, #dfdddd);
+	background-image: -moz-linear-gradient(top, #f4f5f5, #dfdddd);
+	background-image: -ms-linear-gradient(top, #f4f5f5, #dfdddd);
+	background-image: -o-linear-gradient(top, #f4f5f5, #dfdddd);
+	background-image: linear-gradient(to bottom, #f4f5f5, #dfdddd);
+}
+#submitText:hover{
+ border:1px solid #bfc4c4;
+ background-color: #d9dddd; background-image: -webkit-gradient(linear, left top, left bottom, from(#d9dddd), to(#c6c3c3));
+ background-image: -webkit-linear-gradient(top, #d9dddd, #c6c3c3);
+ background-image: -moz-linear-gradient(top, #d9dddd, #c6c3c3);
+ background-image: -ms-linear-gradient(top, #d9dddd, #c6c3c3);
+ background-image: -o-linear-gradient(top, #d9dddd, #c6c3c3);
+ background-image: linear-gradient(to bottom, #d9dddd, #c6c3c3);
+}
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+	.searchResult{
+		margin-left: 10%;
+	}
+
+}
+@media only screen and (min-width : 480px) and (max-width : 600px) {
+	.searchResult{
+		margin-left: 20%;
+	}
+
+}
+@media only screen and (min-width: 600px) {
+	.searchResult .imageDiv{
+		width: 40%;
+	}
+	.searchResult .descriptionDiv {
+		width: 40%;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.searchResult .imageDiv{
+		width: 27%;
+	}
+	.searchResult .descriptionDiv {
+		width: 40%;
+	}
+}

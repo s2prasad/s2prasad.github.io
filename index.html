@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PlayStation HW Assignment</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<header>
+	<div class="searchBar">
+		<input type="search" id="searchText" placeholder="Search query..." size="22">
+		<button type="submit" id="submitText" onclick="playStation.searchTxt()">Search</button>
+	</div>
+	</header>
+	<hr/>
+	<div class="resultDiv">
+		<div class="listNav">
+			<p id="results"> Total Results: <span id="totalResults"></span></p>
+			<nav id="pagination">
+			  <a href="javascript:playStation.prevPage()" id="btn_prev"> ❮ </a>
+			   <span id="page"></span>/<span id="pageTotal"></span>
+			  <a href="javascript:playStation.nextPage()" id="btn_next"> ❯ </a>
+			</nav>
+		</div>
+		<div id="loading"></div>
+		<div class="searchResult">
+
+		</div>
+
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
